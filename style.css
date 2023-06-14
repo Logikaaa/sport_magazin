@@ -1,10 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+html{
+zoom: 100%; // задає початковий вихідний масштаб сторінки під час відкриття
+}
 body{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     left: 0;
-    position: absolute;
     width: 100%;
-    background:black ;
+    background-color: black;
+    color: cornsilk;
 }
 h2{
     position: relative;
@@ -13,17 +19,17 @@ h2{
     font-size: 48px;
     line-height: 56px;
     text-align: center;
-    color: white;
+    color: #575757;
 }
 
 
 header{
     position: relative;
-    height: 100px;
+    height: 200px;
     top: 70px;
     width: 100%;
-    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619253706_24-phonoteka_org-p-fon-magazina-vnutri-35.jpg);
-    background-position: 100%;
+    background-image:url(https://goleador.in.ua/image/data/novosty/futbolnuy-magazin.jpg);
+    background-position: 100% ;
     display: flex;
     align-items: center;
 }
@@ -46,41 +52,37 @@ nav{
     font-size: 20px;
     line-height: 23px;
     text-decoration: none;
-    color: white;
-    background: black;
+    color:white;
 }
 
 
 .nav-link:first-child{
     font-weight: 700;  
-    color:white;
+    color: #FFFFFF;
 }
 
 
 .nav-link:hover:first-child{
-    color:red;
+    color:green;
 }
 
 
 .nav-link:hover{
     font-weight: 700;
-    color: #FFFFFF;
+    color:red;
     transition: 0.2s ease-in;
 }
 
 
 .logo{
     position: absolute;
-    width: 105px;
+    width: 15%;
     left: 88px;
-    top: 25%;
-    font-size: 26px;
-    color: white;
-    background: black;
-    margin: 10px;
-    padding: 10px;
-
-
+    top: 5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
 }
 
 
@@ -89,239 +91,27 @@ main{
     width: 100%;
     top: 100px;
 }
-
-
-.info{
-    position: relative;
-    width: 100%;
-    height: 528px;
-    left: 0px;
-    top: 50px;
+.img {
+    width: 630px;
+    height: 300px;
 }
-.info-img{
-    position: absolute;
-    width: 40%;
-    top: 20%;
-    left: 60%;
-}
-.info-div{
-    position: absolute;
-    left: 5%;
-    width: 50%;
-}
-.info-div h1{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 75px;
-    color: white;
-}
-.info-div p{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-    color: white;
-    width: 90%;
-}
-.info-butt{
-    width: 70%;
+.info-div {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-.call-butt{
-    text-decoration: none;
-    background-color: navy;
-    border-radius: 20px;
-    padding: 20px;
-    color: white;
-    font-size: 20px;
-}
-
-.call-butt::before {
-   width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.call-butt:hover::before{
-    content: url("");
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    opacity: 1;
-    display:invite block;
-}
-.menu-butt{
-   background: #FFFFFF;
-    border: 1px solid #FFC700;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    text-decoration: none;
-    color: #FFC700;
-    padding: 3% 10%;
-    margin: 5% 5% 5% 0%;
-   
-}
-.menu-butt:hover{
-    background: #FFC700;
-    color: #FFFFFF;
-    transition: 0.2s ease-out;
-}
-
-
-.menu{
-    position: relative;
-    width: 100%;
-    height: 40%;
-    left: 0px;
-    top:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.menu-div{
-    position: relative;
-    left: 88px;
-    margin: 10% 0%;
-}
-.menu-img{
-    width: 30%;
-   
-}
-
-
-
-.sallary{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FF6B00;
-}
-.order{
-    background: #FFC700;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 2% 10%;
-   
-}
-.order:hover{
-    background: #FFFFFF;
-    color: #FFC700;
-    border: 1px solid #FFC700;
-    transition: 0.2s ease-out;
-}
-
-
-.sale{
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 407px;
-    left: 0px;
-   
-}
-.sale-div{
-    display: flex;
-    justify-content: center;
-}
-.sale-img{
-    width: 190px;
-    height: 190px;
-    padding: 3% 5%;
-   
-}
-.about{
-    position: relative;
-    width: 100%;
-    height: 777px;
-    left: 0px;
-}
-
-
-footer{
-    position: relative;
-    width: 100%;
-    top: 270px;
-    height: ;
-    display: ;
-    font-size: 25px;
-    left: 0px;
-    padding: 10px;
-    background: greenyellow;
-
-}
-
-footer p {
     
-    margin: 5px;
-    padding: 5px;
 }
-
-h4{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    color: #FFFFFF;
-}
-
-.logo-img{
-    position: absolute;
-    left: 70%;
-    top:15%;
-    width: 15%;
-}
-
-.logoimg {
-    height: 60px;
-    margin: 10px;
-}
-
-.bober {
-    height: 750px;
-    text-align: center;
-}
-
-iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.g4 {
-    height: 50px;
-    width: 25px;
-    position: fixed;
-    bottom: 10%;
-    right: 2%;
-    width: 15%;
-    padding: 2%;
-}
-
 .img1 {
-    height: 200px;
+    border-radius: 10px;
+    height:150px;
+    width:200px;
 }
-.pos1 {
-    text-align: center;
-}
-
-.menu {
+.tov {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+.tv{
+    text-align: center;
+}  
 .vidguk1{
     display: flex;
     padding: 10px;
@@ -331,11 +121,37 @@ iframe {
 .vidguk {
     padding:10px;
     justify-content: space-around;
-    color: white ;
-    border:5px dotted darkturquoise ;
 }
 .img2 {
      height: 60px;
      width: 60px;
      margin: 5px;
+}
+iframe{
+    justify-content: space-between;
+    text-align: center;
+}
+.karta {
+     text-align: center;
+} 
+footer{
+    position: relative;
+    top: 150px; 
+    background: red;
+    color: white;
+    margin: 10px;
+    height: 100px;
+}
+.footer-img {
+    height: 30px;
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
+}
+.footer-img1 {
+    height: 30px;
+    position: absolute;
+    right: 2%;
+    bottom: 60%;
+    background: white;
 }
